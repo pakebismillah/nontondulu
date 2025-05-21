@@ -1,6 +1,8 @@
 package com.example.nontondulu;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class AccountPagerAdapter extends FragmentStateAdapter {
 
@@ -11,7 +13,11 @@ public class AccountPagerAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        return position == 0 ? new SavedFragment() : new ResepkuFragment();
+        if (position == 0) {
+            return new SavedFragment();
+        } else {
+            return new ResepkuFragment();
+        }
     }
 
     @Override
