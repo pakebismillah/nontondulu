@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "326024793378",
+    "project_id": "nontondulu-53a7b",
+    "storage_bucket": "nontondulu-53a7b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326024793378:android:caef696b16a6bd3a68697b",
+        "android_client_info": {
+          "package_name": "com.example.nontondulu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtx7XAaP2imhOLv4hM5pX7JAGBZFp6XiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
