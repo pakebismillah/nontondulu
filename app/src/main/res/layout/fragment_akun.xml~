@@ -46,25 +46,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bapak Budi"
+                android:text="Nama Asli"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
 
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Username"
-                android:enabled="false"
-                android:backgroundTint="#DDDDDD"
+                android:text="Username"
                 android:layout_marginBottom="8dp"/>
 
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
-                android:enabled="false"
-                android:backgroundTint="#DDDDDD"/>
+                android:text="Email" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -93,3 +89,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
+    git status            # Melihat file yang berubah
+    git add .             # Menambahkan semua perubahan
+    git commit -m "Menambahkan layout HomeFragment sesuai desain"
