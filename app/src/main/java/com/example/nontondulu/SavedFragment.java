@@ -7,16 +7,16 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-public class ResepkuFragment extends Fragment {
+public class SavedFragment extends Fragment {
 
-    public ResepkuFragment() {
-        // Konstruktor kosong wajib ada
+    public SavedFragment() {
+        // Konstruktor kosong tetap dibutuhkan
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate layout fragment_resepku.xml
-        return inflater.inflate(R.layout.fragment_resepku, container, false);
+        // Inflate layout fragment_wishlist.xml
+        return inflater.inflate(R.layout.fragment_wishlist, container, false);
     }
 }

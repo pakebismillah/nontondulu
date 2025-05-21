@@ -55,10 +55,19 @@ public class LoginActivity extends AppCompatActivity {
         auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
+                        // Ambil nama dari Firebase User kalau ada, atau pakai email saja
+                        String name = auth.getCurrentUser().getDisplayName(); // optional
+                        if (name == null || name.isEmpty()) {
+                            name = "User"; // fallback default
+                        }
+
+                        SessionManager sessionManager = new SessionManager(this);
+                        sessionManager.saveUser(name, email);
+
                         Toast.makeText(this, "Login berhasil!", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                        finish(); // Biar ga balik ke login
-                    } else {
+                        finish();
+                    }else {
                         Toast.makeText(this, "Login gagal: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });
