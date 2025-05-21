@@ -31,6 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+/* <<<<<<<<<<<<<<  ✨ Windsurf Command 🌟 >>>>>>>>>>>>>>>> */
     <!-- CardView untuk form -->
     <androidx.cardview.widget.CardView
         android:id="@+id/loginFormCard"
@@ -39,7 +40,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="6dp"
         app:layout_constraintTop_toBottomOf="@id/yellowHeader"
@@ -82,7 +83,6 @@
         android:elevation="4dp"
         app:layout_constraintTop_toBottomOf="@id/loginFormCard"
         app:layout_constraintTop_margin="24dp"
-        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -94,12 +94,12 @@
         android:text="Belum punya akun? Register"
         android:textSize="14sp"
         android:elevation="0dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="#FFEB3B"
-        android:textColor="#000"
         app:layout_constraintTop_toBottomOf="@id/btnLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+/* <<<<<<<<<<  72fc480e-af11-4edc-b8a2-22650c3094a1  >>>>>>>>>>> */
 
 </androidx.constraintlayout.widget.ConstraintLayout>
